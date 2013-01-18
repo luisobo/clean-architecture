@@ -17,6 +17,7 @@ An interactor represents a Use Case of the app. It is responsible for:
 * Keep the application state, given that iOS apps are not service oriented.
 * Define a strict boundary around the business logic.
 * Deal with other implementation specific details like calling the persistence layer, networking to third-party systems, etc.
+* The public API of an interactor is tied to the main thread. Requests are made from the main thread and responses are returned to the main thread.
 
 #### Delivery mechanism
 The specific implementation that the user will use to perform actions on the system and to communicate the state of the system back to the user. Call it GUI, Web, JSON API, CLI, multitouch screen, Rails, etc. Delivery mechanisms talk to interactors via the Boundaries.
