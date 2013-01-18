@@ -8,6 +8,6 @@
 
 #import "LSService.h"
 
-@interface LSLocalytics : LSService
+@interface LSLocalyticsService : LSService
 
 @end

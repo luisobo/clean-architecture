@@ -9,5 +9,16 @@
 #import "LSServiceManager.h"
 
 @implementation LSServiceManager
++ (id)sharedInstance {
+    return [[self alloc] init];
+}
 
+
+- (void)registerService:(LSService *)service {
+    
+}
+
+- (void)start {
+    
+}
 @end

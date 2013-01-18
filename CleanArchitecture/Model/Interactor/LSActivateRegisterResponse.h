@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface LSActivateRegisterResponse : NSObject
-
+@property (nonatomic, assign, getter = isDone) BOOL done;
+@property (nonatomic, strong) NSObject *result;
+- (void)waitUntilIsDone;
+- (void)markAsDone;
 @end

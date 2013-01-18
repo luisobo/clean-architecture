@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+@class LSService;
 
 @interface LSServiceManager : NSObject
++ (id)sharedInstance;
 
+@property (nonatomic, strong, readonly) NSArray *services;
+
+- (void)registerService:(LSService *)service;
+- (void)start;
 @end

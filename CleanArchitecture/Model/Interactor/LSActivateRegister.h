@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@class LSActivateRegisterResponse;
 
 @interface LSActivateRegister : NSObject
-
+- (LSActivateRegisterResponse *)activateRegisterWithStoreName:(NSString *)storeName login:(NSString *)login password:(NSString *)password registerNumber:(NSUInteger)registerNumber;
 @end

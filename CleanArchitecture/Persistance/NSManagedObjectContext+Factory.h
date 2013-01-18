@@ -9,5 +9,6 @@
 #import <CoreData/CoreData.h>
 
 @interface NSManagedObjectContext (Factory)
-
++(NSManagedObjectContext*) managedObjectContextWithName:(NSString *)name storeType:(NSString *)storeType ;
 @end
+

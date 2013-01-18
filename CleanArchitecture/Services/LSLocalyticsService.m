@@ -6,8 +6,12 @@
 //  Copyright (c) 2013 Luis Solano Bonet. All rights reserved.
 //
 
-#import "LSLocalytics.h"
+#import "LSLocalyticsService.h"
 
-@implementation LSLocalytics
+@implementation LSLocalyticsService
+
+- (void)start {
+    NSLog(@"Starting localytics");
+}
 
 @end

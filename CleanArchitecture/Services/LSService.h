@@ -10,4 +10,11 @@
 
 @interface LSService : NSObject
 
+- (void)start;
+- (void)applicationDidFinishLaunching:(UIApplication *)application;
+- (void)applicationDidEnterBackground:(UIApplication *)application;
+- (void)applicationDidBecomeActive:(UIApplication *)application;
+- (void)applicationWillEnterForeground:(UIApplication *)application;
+- (void)applicationWillTerminate:(UIApplication *)application;
+
 @end

@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LSArrayTableViewDelegate : NSObject
+typedef void(^LSCellCustomizer)(UITableViewCell *cell, id item);
 
+@interface LSArrayTableViewDelegate : NSObject
+<UITableViewDataSource, UITableViewDelegate>
+
+- (id)initWithArray:(NSArray *)array;
+@property (nonatomic, copy) LSCellCustomizer cellCustomizer;
 @end

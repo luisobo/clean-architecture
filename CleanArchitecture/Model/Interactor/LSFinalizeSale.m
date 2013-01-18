@@ -9,5 +9,7 @@
 #import "LSFinalizeSale.h"
 
 @implementation LSFinalizeSale
-
+- (void)payWithCash {
+    
+}
 @end

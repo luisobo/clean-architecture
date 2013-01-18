@@ -24,6 +24,22 @@
 		A04BD0A216A4FA33002A4E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04BD07A16A4FA32002A4E08 /* Foundation.framework */; };
 		A04BD0AA16A4FA33002A4E08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A04BD0A816A4FA33002A4E08 /* InfoPlist.strings */; };
 		A04BD0AD16A4FA33002A4E08 /* CleanArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0AC16A4FA33002A4E08 /* CleanArchitectureTests.m */; };
+		A04BD0BD16A4FAA5002A4E08 /* Register.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0BB16A4FAA5002A4E08 /* Register.xcdatamodeld */; };
+		A04BD0C916A4FBAA002A4E08 /* SoldItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0C816A4FBAA002A4E08 /* SoldItem.m */; };
+		A04BD0CC16A4FBAA002A4E08 /* Sale.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0CB16A4FBAA002A4E08 /* Sale.m */; };
+		A04BD0CF16A4FBAA002A4E08 /* StockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0CE16A4FBAA002A4E08 /* StockItem.m */; };
+		A04BD0D316A4FBF3002A4E08 /* LSCreateSale.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0D216A4FBF3002A4E08 /* LSCreateSale.m */; };
+		A04BD0D516A4FC9C002A4E08 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04BD0D416A4FC9C002A4E08 /* CoreData.framework */; };
+		A04BD0E016A4FE32002A4E08 /* NSManagedObjectContext+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0DF16A4FE32002A4E08 /* NSManagedObjectContext+Factory.m */; };
+		A04BD0E416A50275002A4E08 /* LSArrayTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0E316A50275002A4E08 /* LSArrayTableViewDelegate.m */; };
+		A04BD0E716A5057F002A4E08 /* LSFinalizeSale.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0E616A5057F002A4E08 /* LSFinalizeSale.m */; };
+		A04BD0EA16A506A9002A4E08 /* LSActivateRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0E916A506A9002A4E08 /* LSActivateRegister.m */; };
+		A04BD0ED16A50800002A4E08 /* LSActivateRegisterResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0EC16A507FF002A4E08 /* LSActivateRegisterResponse.m */; };
+		A04BD0F116A508BD002A4E08 /* LSActivateRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BD0EF16A508BD002A4E08 /* LSActivateRegisterViewController.m */; };
+		A04BD0F216A508BD002A4E08 /* LSActivateRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04BD0F016A508BD002A4E08 /* LSActivateRegisterViewController.xib */; };
+		A087A44916A8DFFC0031685F /* LSService.m in Sources */ = {isa = PBXBuildFile; fileRef = A087A44816A8DFFC0031685F /* LSService.m */; };
+		A087A44C16A8E0480031685F /* LSServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A087A44B16A8E0480031685F /* LSServiceManager.m */; };
+		A087A44F16A8E0E10031685F /* LSLocalyticsService.m in Sources */ = {isa = PBXBuildFile; fileRef = A087A44E16A8E0E10031685F /* LSLocalyticsService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +76,35 @@
 		A04BD0A916A4FA33002A4E08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A04BD0AB16A4FA33002A4E08 /* CleanArchitectureTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanArchitectureTests.h; sourceTree = "<group>"; };
 		A04BD0AC16A4FA33002A4E08 /* CleanArchitectureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CleanArchitectureTests.m; sourceTree = "<group>"; };
+		A04BD0BC16A4FAA5002A4E08 /* Register.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Register.xcdatamodel; sourceTree = "<group>"; };
+		A04BD0C716A4FBAA002A4E08 /* SoldItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoldItem.h; path = Model/Persistence/SoldItem.h; sourceTree = "<group>"; };
+		A04BD0C816A4FBAA002A4E08 /* SoldItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoldItem.m; path = Model/Persistence/SoldItem.m; sourceTree = "<group>"; };
+		A04BD0CA16A4FBAA002A4E08 /* Sale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sale.h; path = Model/Persistence/Sale.h; sourceTree = "<group>"; };
+		A04BD0CB16A4FBAA002A4E08 /* Sale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sale.m; path = Model/Persistence/Sale.m; sourceTree = "<group>"; };
+		A04BD0CD16A4FBAA002A4E08 /* StockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockItem.h; path = Model/Persistence/StockItem.h; sourceTree = "<group>"; };
+		A04BD0CE16A4FBAA002A4E08 /* StockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StockItem.m; path = Model/Persistence/StockItem.m; sourceTree = "<group>"; };
+		A04BD0D116A4FBF3002A4E08 /* LSCreateSale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSCreateSale.h; path = Model/Interactor/LSCreateSale.h; sourceTree = "<group>"; };
+		A04BD0D216A4FBF3002A4E08 /* LSCreateSale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSCreateSale.m; path = Model/Interactor/LSCreateSale.m; sourceTree = "<group>"; };
+		A04BD0D416A4FC9C002A4E08 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A04BD0DE16A4FE32002A4E08 /* NSManagedObjectContext+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+Factory.h"; path = "Persistance/NSManagedObjectContext+Factory.h"; sourceTree = "<group>"; };
+		A04BD0DF16A4FE32002A4E08 /* NSManagedObjectContext+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+Factory.m"; path = "Persistance/NSManagedObjectContext+Factory.m"; sourceTree = "<group>"; };
+		A04BD0E216A50275002A4E08 /* LSArrayTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSArrayTableViewDelegate.h; path = Delegates/LSArrayTableViewDelegate.h; sourceTree = "<group>"; };
+		A04BD0E316A50275002A4E08 /* LSArrayTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSArrayTableViewDelegate.m; path = Delegates/LSArrayTableViewDelegate.m; sourceTree = "<group>"; };
+		A04BD0E516A5057F002A4E08 /* LSFinalizeSale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSFinalizeSale.h; path = Model/Interactor/LSFinalizeSale.h; sourceTree = "<group>"; };
+		A04BD0E616A5057F002A4E08 /* LSFinalizeSale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSFinalizeSale.m; path = Model/Interactor/LSFinalizeSale.m; sourceTree = "<group>"; };
+		A04BD0E816A506A9002A4E08 /* LSActivateRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSActivateRegister.h; path = Model/Interactor/LSActivateRegister.h; sourceTree = "<group>"; };
+		A04BD0E916A506A9002A4E08 /* LSActivateRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSActivateRegister.m; path = Model/Interactor/LSActivateRegister.m; sourceTree = "<group>"; };
+		A04BD0EB16A507FF002A4E08 /* LSActivateRegisterResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSActivateRegisterResponse.h; path = Model/Interactor/LSActivateRegisterResponse.h; sourceTree = "<group>"; };
+		A04BD0EC16A507FF002A4E08 /* LSActivateRegisterResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSActivateRegisterResponse.m; path = Model/Interactor/LSActivateRegisterResponse.m; sourceTree = "<group>"; };
+		A04BD0EE16A508BD002A4E08 /* LSActivateRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSActivateRegisterViewController.h; path = ViewControllers/LSActivateRegisterViewController.h; sourceTree = "<group>"; };
+		A04BD0EF16A508BD002A4E08 /* LSActivateRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSActivateRegisterViewController.m; path = ViewControllers/LSActivateRegisterViewController.m; sourceTree = "<group>"; };
+		A04BD0F016A508BD002A4E08 /* LSActivateRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LSActivateRegisterViewController.xib; path = ViewControllers/LSActivateRegisterViewController.xib; sourceTree = "<group>"; };
+		A087A44716A8DFFC0031685F /* LSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSService.h; path = Services/LSService.h; sourceTree = "<group>"; };
+		A087A44816A8DFFC0031685F /* LSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSService.m; path = Services/LSService.m; sourceTree = "<group>"; };
+		A087A44A16A8E0480031685F /* LSServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSServiceManager.h; path = Services/LSServiceManager.h; sourceTree = "<group>"; };
+		A087A44B16A8E0480031685F /* LSServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSServiceManager.m; path = Services/LSServiceManager.m; sourceTree = "<group>"; };
+		A087A44D16A8E0E10031685F /* LSLocalyticsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSLocalyticsService.h; path = Services/LSLocalyticsService.h; sourceTree = "<group>"; };
+		A087A44E16A8E0E10031685F /* LSLocalyticsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSLocalyticsService.m; path = Services/LSLocalyticsService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04BD0D516A4FC9C002A4E08 /* CoreData.framework in Frameworks */,
 				A04BD07916A4FA32002A4E08 /* UIKit.framework in Frameworks */,
 				A04BD07B16A4FA32002A4E08 /* Foundation.framework in Frameworks */,
 				A04BD07D16A4FA32002A4E08 /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +154,7 @@
 		A04BD07716A4FA32002A4E08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A04BD0D416A4FC9C002A4E08 /* CoreData.framework */,
 				A04BD07816A4FA32002A4E08 /* UIKit.framework */,
 				A04BD07A16A4FA32002A4E08 /* Foundation.framework */,
 				A04BD07C16A4FA32002A4E08 /* CoreGraphics.framework */,
@@ -119,12 +166,13 @@
 		A04BD07E16A4FA32002A4E08 /* CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				A087A44516A8DFDF0031685F /* Services */,
+				A04BD0E116A5025A002A4E08 /* Delegates */,
+				A04BD0DD16A4FE18002A4E08 /* Persistance */,
+				A04BD0B716A4FA55002A4E08 /* ViewControllers */,
+				A04BD0B616A4FA4B002A4E08 /* Model */,
 				A04BD08716A4FA32002A4E08 /* LSAppDelegate.h */,
 				A04BD08816A4FA32002A4E08 /* LSAppDelegate.m */,
-				A04BD09016A4FA32002A4E08 /* LSViewController.h */,
-				A04BD09116A4FA32002A4E08 /* LSViewController.m */,
-				A04BD09316A4FA32002A4E08 /* LSViewController_iPhone.xib */,
-				A04BD09616A4FA32002A4E08 /* LSViewController_iPad.xib */,
 				A04BD07F16A4FA32002A4E08 /* Supporting Files */,
 			);
 			path = CleanArchitecture;
@@ -161,6 +209,105 @@
 				A04BD0A816A4FA33002A4E08 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A04BD0B616A4FA4B002A4E08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A04BD0D016A4FBD7002A4E08 /* Interactors */,
+				A04BD0BA16A4FA81002A4E08 /* Networking */,
+				A04BD0B916A4FA7C002A4E08 /* Persistence */,
+				A04BD0B816A4FA75002A4E08 /* Entities */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A04BD0B716A4FA55002A4E08 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A04BD09016A4FA32002A4E08 /* LSViewController.h */,
+				A04BD09116A4FA32002A4E08 /* LSViewController.m */,
+				A04BD09316A4FA32002A4E08 /* LSViewController_iPhone.xib */,
+				A04BD09616A4FA32002A4E08 /* LSViewController_iPad.xib */,
+				A04BD0EE16A508BD002A4E08 /* LSActivateRegisterViewController.h */,
+				A04BD0EF16A508BD002A4E08 /* LSActivateRegisterViewController.m */,
+				A04BD0F016A508BD002A4E08 /* LSActivateRegisterViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A04BD0B816A4FA75002A4E08 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A04BD0CD16A4FBAA002A4E08 /* StockItem.h */,
+				A04BD0CE16A4FBAA002A4E08 /* StockItem.m */,
+				A04BD0CA16A4FBAA002A4E08 /* Sale.h */,
+				A04BD0CB16A4FBAA002A4E08 /* Sale.m */,
+				A04BD0C716A4FBAA002A4E08 /* SoldItem.h */,
+				A04BD0C816A4FBAA002A4E08 /* SoldItem.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		A04BD0B916A4FA7C002A4E08 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A04BD0BB16A4FAA5002A4E08 /* Register.xcdatamodeld */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		A04BD0BA16A4FA81002A4E08 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A04BD0D016A4FBD7002A4E08 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				A04BD0D116A4FBF3002A4E08 /* LSCreateSale.h */,
+				A04BD0D216A4FBF3002A4E08 /* LSCreateSale.m */,
+				A04BD0E516A5057F002A4E08 /* LSFinalizeSale.h */,
+				A04BD0E616A5057F002A4E08 /* LSFinalizeSale.m */,
+				A04BD0E816A506A9002A4E08 /* LSActivateRegister.h */,
+				A04BD0E916A506A9002A4E08 /* LSActivateRegister.m */,
+				A04BD0EB16A507FF002A4E08 /* LSActivateRegisterResponse.h */,
+				A04BD0EC16A507FF002A4E08 /* LSActivateRegisterResponse.m */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		A04BD0DD16A4FE18002A4E08 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				A04BD0DE16A4FE32002A4E08 /* NSManagedObjectContext+Factory.h */,
+				A04BD0DF16A4FE32002A4E08 /* NSManagedObjectContext+Factory.m */,
+			);
+			name = Persistance;
+			sourceTree = "<group>";
+		};
+		A04BD0E116A5025A002A4E08 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A04BD0E216A50275002A4E08 /* LSArrayTableViewDelegate.h */,
+				A04BD0E316A50275002A4E08 /* LSArrayTableViewDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		A087A44516A8DFDF0031685F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A087A44716A8DFFC0031685F /* LSService.h */,
+				A087A44816A8DFFC0031685F /* LSService.m */,
+				A087A44A16A8E0480031685F /* LSServiceManager.h */,
+				A087A44B16A8E0480031685F /* LSServiceManager.m */,
+				A087A44D16A8E0E10031685F /* LSLocalyticsService.h */,
+				A087A44E16A8E0E10031685F /* LSLocalyticsService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +388,7 @@
 				A04BD08F16A4FA32002A4E08 /* Default-568h@2x.png in Resources */,
 				A04BD09516A4FA32002A4E08 /* LSViewController_iPhone.xib in Resources */,
 				A04BD09816A4FA32002A4E08 /* LSViewController_iPad.xib in Resources */,
+				A04BD0F216A508BD002A4E08 /* LSActivateRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +426,20 @@
 				A04BD08516A4FA32002A4E08 /* main.m in Sources */,
 				A04BD08916A4FA32002A4E08 /* LSAppDelegate.m in Sources */,
 				A04BD09216A4FA32002A4E08 /* LSViewController.m in Sources */,
+				A04BD0BD16A4FAA5002A4E08 /* Register.xcdatamodeld in Sources */,
+				A04BD0C916A4FBAA002A4E08 /* SoldItem.m in Sources */,
+				A04BD0CC16A4FBAA002A4E08 /* Sale.m in Sources */,
+				A04BD0CF16A4FBAA002A4E08 /* StockItem.m in Sources */,
+				A04BD0D316A4FBF3002A4E08 /* LSCreateSale.m in Sources */,
+				A04BD0E016A4FE32002A4E08 /* NSManagedObjectContext+Factory.m in Sources */,
+				A04BD0E416A50275002A4E08 /* LSArrayTableViewDelegate.m in Sources */,
+				A04BD0E716A5057F002A4E08 /* LSFinalizeSale.m in Sources */,
+				A04BD0EA16A506A9002A4E08 /* LSActivateRegister.m in Sources */,
+				A04BD0ED16A50800002A4E08 /* LSActivateRegisterResponse.m in Sources */,
+				A04BD0F116A508BD002A4E08 /* LSActivateRegisterViewController.m in Sources */,
+				A087A44916A8DFFC0031685F /* LSService.m in Sources */,
+				A087A44C16A8E0480031685F /* LSServiceManager.m in Sources */,
+				A087A44F16A8E0E10031685F /* LSLocalyticsService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +556,7 @@
 				GCC_PREFIX_HEADER = "CleanArchitecture/CleanArchitecture-Prefix.pch";
 				INFOPLIST_FILE = "CleanArchitecture/CleanArchitecture-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,6 +568,7 @@
 				GCC_PREFIX_HEADER = "CleanArchitecture/CleanArchitecture-Prefix.pch";
 				INFOPLIST_FILE = "CleanArchitecture/CleanArchitecture-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -462,6 +626,7 @@
 				A04BD0B216A4FA33002A4E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A04BD0B316A4FA33002A4E08 /* Build configuration list for PBXNativeTarget "CleanArchitectureTests" */ = {
 			isa = XCConfigurationList;
@@ -470,8 +635,23 @@
 				A04BD0B516A4FA33002A4E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A04BD0BB16A4FAA5002A4E08 /* Register.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A04BD0BC16A4FAA5002A4E08 /* Register.xcdatamodel */,
+			);
+			currentVersion = A04BD0BC16A4FAA5002A4E08 /* Register.xcdatamodel */;
+			name = Register.xcdatamodeld;
+			path = Model/Persistence/Register.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A04BD06B16A4FA32002A4E08 /* Project object */;
 }

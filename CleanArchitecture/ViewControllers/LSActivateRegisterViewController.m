@@ -7,32 +7,38 @@
 //
 
 #import "LSActivateRegisterViewController.h"
+#import "LSActivateRegister.h"
+#import "LSActivateRegisterResponse.h"
 
 @interface LSActivateRegisterViewController ()
-
+@property (nonatomic, strong) LSActivateRegister *interactor;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *spinner;
+- (IBAction)activateButtonTapped:(id)sender;
 @end
 
 @implementation LSActivateRegisterViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.interactor = [LSActivateRegister new];
+    self.spinner.hidden = YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - IB Actions
+- (IBAction)activateButtonTapped:(id)sender {
+    LSActivateRegisterResponse *response = [self.interactor activateRegisterWithStoreName:@"foo" login:@"foo" password:@"password" registerNumber:2];
+    self.spinner.hidden = NO;
+    
+    [response waitUntilIsDone];
+
+    self.spinner.hidden = YES;
+    NSLog(@"is result nil? %d", response.result == nil);    
 }
 
 @end

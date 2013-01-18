@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @interface LSFinalizeSale : NSObject
-
+- (void)payWithCash;
 @end

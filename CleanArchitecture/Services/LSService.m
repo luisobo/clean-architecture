@@ -10,4 +10,23 @@
 
 @implementation LSService
 
+- (void)start {
+    [NSException raise:NSInternalInconsistencyException format:@"abstract method"];
+}
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    
+}
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    
+}
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    
+}
+- (void)applicationWillTerminate:(UIApplication *)application {
+    
+}
 @end

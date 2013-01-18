@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Register" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Sale" representedClassName="Sale" syncable="YES">
+        <relationship name="soldItems" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SoldItem" inverseName="sale" inverseEntity="SoldItem" syncable="YES"/>
+    </entity>
+    <entity name="SoldItem" representedClassName="SoldItem" syncable="YES">
+        <attribute name="quantity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="sale" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Sale" inverseName="soldItems" inverseEntity="Sale" syncable="YES"/>
+        <relationship name="stockItems" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="StockItem" inverseName="soldItems" inverseEntity="StockItem" syncable="YES"/>
+    </entity>
+    <entity name="StockItem" representedClassName="StockItem" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="soldItems" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="SoldItem" inverseName="stockItems" inverseEntity="SoldItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Sale" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="SoldItem" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="StockItem" positionX="160" positionY="192" width="128" height="90"/>
+    </elements>
 </model>
