@@ -1,6 +1,6 @@
 # Clean Architecture for iOS
 
-This is an example of how to architect an iOS application by decoupling completely the UI and the business logic.
+This is an example of how to architect an iOS application by decoupling completely the UI and the business logic. It's based on the Clean Architecture idea that Uncle Bob has been mentioning for a while. Implementation specific details for iOS are mine.
 
 This example uses UIKit for the UI but it should be easy to replace this UI with a CLI or any other delivery mechanism.
 
@@ -9,7 +9,7 @@ This example uses UIKit for the UI but it should be easy to replace this UI with
 You should be familiar with this type of objects. An entity represents a domain-specific concept. Department, Employee, Sale, Return, Flight, etc.
 
 #### Implementation specific code
-Not domain-related code that is required in order to make the system work as expected. Modules that abstract persistence, networking, etc will fall in this category
+Not domain-related code that is required in order to make the system work as expected. Modules that abstract persistence, networking, etc will fall in this category.
 
 #### Interactors
 An interactor represents a Use Case of the app. It is responsible for:
@@ -19,10 +19,10 @@ An interactor represents a Use Case of the app. It is responsible for:
 * Deal with other implementation specific details like calling the persistence layer, networking to third-party systems, etc.
 
 #### Delivery mechanism
-The specific implementation that the user will use to perform actions on the system and to communicate the state of the system back to the user. Call it GUI, Web, JSON API, CLI, multitouch screen, Rails, etc.
+The specific implementation that the user will use to perform actions on the system and to communicate the state of the system back to the user. Call it GUI, Web, JSON API, CLI, multitouch screen, Rails, etc. Delivery mechanisms talk to interactors via the Boundaries.
 
 #### Boundaries
-Interactors define a strict boundary to separate the delivery mechanism from the business logic. These boundaries represent some request to the interactor and some response from it.
+These boundaries represent some request to the interactor and some response from it.
 
 In this example, ViewControllers capture a request from the user via the UI, interpret what the user wants and request the interactor to perform that action via the designated boundary. The interactor will then return a response with the result of that action. The ViewController will unpack that response and present it back to the user.
 
